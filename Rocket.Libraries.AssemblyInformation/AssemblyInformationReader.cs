@@ -23,7 +23,7 @@ namespace Rocket.Libraries.AssemblyInformation
             get
             {
                 var fileInfo = new FileInfo(Assembly.GetEntryAssembly().Location);
-                return fileInfo.CreationTime;
+                return fileInfo.LastWriteTime;
             }
         }
     }
